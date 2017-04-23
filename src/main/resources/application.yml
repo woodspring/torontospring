@@ -1,0 +1,21 @@
+---
+server:
+  port: 4983
+  contextPath: /SpringToronto
+---
+spring:
+  profiles: local
+datasource:
+  sampleapp:
+    url: jdbc:mysql://localhost:3306/TORONTO
+    username: root
+    password: 
+    driverClassName: com.mysql.jdbc.Driver
+    defaultSchema:
+    maxPoolSize: 20
+    hibernate:
+      hbm2ddl.method: update
+      show_sql: true
+      format_sql: true
+      dialect: org.hibernate.dialect.MySQLDialect
+
